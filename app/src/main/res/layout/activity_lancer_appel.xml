@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.chibani.alertesang.LancerAppel"
+    android:background="@drawable/vingt"
+    >
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="122dp"
+        android:text="Numéro"
+        android:textColor="#0f0e0e" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Adresse"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:textColor="#0c0c0c"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:weightSum="1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="@string/test17"
+            android:id="@+id/radioButton7"
+            android:checked="true"
+            android:textColor="#9f2727"
+            android:layout_weight="0.52" />
+
+        <RadioButton
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="@string/test18"
+            android:id="@+id/radioButton8"
+            android:checked="false"
+            android:textColor="#b55a5a" />
+
+        <RadioButton
+            android:layout_width="58dp"
+            android:layout_height="20dp"
+            android:text="@string/test20"
+            android:id="@+id/radioButton9"
+            android:checked="false"
+            android:textColor="#821c1c" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test19"
+            android:id="@+id/radioButton10"
+            android:checked="false"
+            android:textColor="#922828"
+            android:layout_weight="0.27" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test13"
+            android:id="@+id/button5"
+            android:layout_gravity="center_horizontal"
+            android:onClick="abo"
+            />
+    </RadioGroup>
+</RelativeLayout>
